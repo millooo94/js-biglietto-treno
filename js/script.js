@@ -5,9 +5,9 @@ const discount18 = price * 0.2
 const discount65 = price * 0.4
 
 if (age < 18) {
-    console.log ('Le è stato applicato uno sconto del 20%! Il suo prezzo è:', price.toFixed(2) - discount18.toFixed(2),"€");
+    console.log ('È stato applicato uno sconto del 20%! Il suo prezzo è:', price.toFixed(2) - discount18.toFixed(2),"€");
 } else if (age > 65) {
-    console.log ('Le è stato applicato uno sconto del 40%! Il suo prezzo è:', price.toFixed(2) - discount65.toFixed(2),"€");
+    console.log ('È stato applicato uno sconto del 40%! Il suo prezzo è:', price.toFixed(2) - discount65.toFixed(2),"€");
 } else {
     console.log ('Non è stato applicato alcuno sconto. Il suo prezzo è:', price.toFixed(2),"€");
 }
