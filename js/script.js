@@ -1,6 +1,6 @@
-const age = prompt('Quanti anni hai?')
-const distance = prompt ('Quanti chilometri vuoi percorrere?')
-const price = Number(distance) * 0.21
+const age = Number(prompt('Quanti anni hai?'))
+const distance = Number(prompt ('Quanti chilometri vuoi percorrere?'))
+const price = (distance) * 0.21
 
 if (age < 18) {
     let discount = price * 0.2
