@@ -1,13 +1,13 @@
 const age = prompt('Quanti anni hai?')
 const distance = prompt ('Quanti chilometri vuoi percorrere?')
-const price = distance * 0.21
-const discount18 = price * 0.2
-const discount65 = price * 0.4
+const price = Number(distance) * 0.21
 
 if (age < 18) {
-    console.log ('È stato applicato uno sconto del 20%! Il suo prezzo è:', price.toFixed(2) - discount18.toFixed(2),"€");
+    let discount = price * 0.2
+    console.log ('È stato applicato uno sconto del 20%! Il suo prezzo è:', price.toFixed(2) - discount.toFixed(2),"€");
 } else if (age > 65) {
-    console.log ('È stato applicato uno sconto del 40%! Il suo prezzo è:', price.toFixed(2) - discount65.toFixed(2),"€");
+    let discount = price * 0.4
+    console.log ('È stato applicato uno sconto del 40%! Il suo prezzo è:', price.toFixed(2) - discount.toFixed(2),"€");
 } else {
     console.log ('Non è stato applicato alcuno sconto. Il suo prezzo è:', price.toFixed(2),"€");
 }
